@@ -4,12 +4,7 @@
 
 bool isPalindrome(const std::string & text)
 {
-    auto result = std::mismatch(text.begin(), text.end(), text.rbegin());
-    if (*result.first)
-    {
-        return false;
-    }
-    return true;
+    return (*std::mismatch(text.begin(), text.end(), text.rbegin()).first) == 0;
 }
 
 int main()
@@ -20,4 +15,5 @@ int main()
     std::cout << "neveroddoreven " << isPalindrome("neveroddoreven") << "\n";
     std::cout << "abacada " << isPalindrome("abacada") << "\n";
     std::cout << "[Empty] " << isPalindrome("") << "\n";
+    std::cout << "M " << isPalindrome("M") << "\n";
 }
