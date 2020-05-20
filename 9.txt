@@ -1,0 +1,1 @@
+echo "`grep -n /bin processes.txt`" >> processes.txt
