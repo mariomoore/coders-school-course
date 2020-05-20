@@ -1,0 +1,12 @@
+  686  mkdir narzedzia1
+  687  cd narzedzia1
+  688  touch processes.txt
+  689  ps aux >> processes.txt
+  690  cp processes.txt copy.txt
+  691  mkdir kopia
+  692  mv copy.txt kopia
+  693  wc processes.txt 
+  694  echo "`wc processes.txt`" >> processes.txt 
+  695  echo "`grep -n /bin processes.txt`" >> processes.txt 
+  696  history
+  697  history | tail -n12 >> commands.txt
